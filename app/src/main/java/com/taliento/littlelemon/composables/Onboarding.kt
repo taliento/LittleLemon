@@ -23,7 +23,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.taliento.littlelemon.ui.theme.PrimaryGreen
 import com.taliento.littlelemon.ui.theme.PrimaryYellow
-import com.hanna.littlelemon.R
+import com.taliento.littlelemon.R
 
 @Composable
 fun Onboarding(navController: NavHostController){
@@ -132,7 +132,7 @@ fun Onboarding(navController: NavHostController){
                                     showToast(context, "Registration successful!")
 
                                     // Navigate to Home screen
-                                    navController.navigate(com.hanna.littlelemon.Home.route)
+                                    navController.navigate(com.taliento.littlelemon.Home.route)
                                 }
                             },
                             border = BorderStroke(2.dp, PrimaryGreen),

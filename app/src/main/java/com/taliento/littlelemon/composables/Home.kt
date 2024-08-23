@@ -22,7 +22,7 @@ import androidx.navigation.compose.rememberNavController
 import com.taliento.littlelemon.ui.theme.PrimaryGreen
 import com.taliento.littlelemon.ui.theme.PrimaryYellow
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.hanna.littlelemon.R
+import com.taliento.littlelemon.R
 import com.taliento.littlelemon.MenuViewModel
 import androidx.compose.runtime.remember
 import androidx.compose.ui.layout.ContentScale
@@ -76,7 +76,7 @@ fun HomePage(navController: NavController) {
                     modifier = Modifier
                         .size(50.dp)
                         .clickable {
-                            navController.navigate(com.hanna.littlelemon.Profile.route)
+                            navController.navigate(com.taliento.littlelemon.Profile.route)
                         }
                 )
             }

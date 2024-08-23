@@ -1,4 +1,4 @@
-package com.hanna.littlelemon
+package com.taliento.littlelemon
 
 interface Destinations {
     val route: String

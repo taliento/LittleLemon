@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.hanna.littlelemon'
+    namespace 'com.taliento.littlelemon'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.hanna.littlelemon"
+        applicationId "com.taliento.littlelemon"
         minSdk 21
         targetSdk 33
         versionCode 1

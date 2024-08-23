@@ -17,7 +17,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.hanna.littlelemon.R
+import com.taliento.littlelemon.R
 import com.taliento.littlelemon.ui.theme.PrimaryGreen
 import com.taliento.littlelemon.ui.theme.PrimaryYellow
 

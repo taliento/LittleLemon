@@ -14,13 +14,13 @@ fun NavigationComposable(context: Context,navController: NavHostController) {
     NavHost(navController = navController,
         startDestination = determineStartDestination(context)
     ) {
-        composable(com.hanna.littlelemon.Home.route) {
+        composable(Home.route) {
             Home(navController)
         }
-        composable(com.hanna.littlelemon.Profile.route) {
+        composable(Profile.route) {
             Profile(navController)
         }
-        composable(com.hanna.littlelemon.Onboarding.route) {
+        composable(Onboarding.route) {
             Onboarding(navController)
         }
     }
@@ -34,9 +34,9 @@ private fun determineStartDestination(context: Context): String {
 
 
     if (sharedPreferences.getBoolean("userRegistered", false)) {
-        return com.hanna.littlelemon.Home.route
+        return Home.route
     }
     else{
-        return com.hanna.littlelemon.Onboarding.route
+        return Onboarding.route
     }
 }
