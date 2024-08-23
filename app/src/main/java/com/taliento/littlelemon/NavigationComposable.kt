@@ -1,24 +1,26 @@
-package com.hanna.littlelemon
+package com.taliento.littlelemon
 
 import android.content.Context
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.hanna.littlelemon.composables.*
+import com.taliento.littlelemon.composables.Home
+import com.taliento.littlelemon.composables.Onboarding
+import com.taliento.littlelemon.composables.Profile
 
 @Composable
 fun NavigationComposable(context: Context,navController: NavHostController) {
     NavHost(navController = navController,
         startDestination = determineStartDestination(context)
     ) {
-        composable(Home.route) {
+        composable(com.hanna.littlelemon.Home.route) {
             Home(navController)
         }
-        composable(Profile.route) {
+        composable(com.hanna.littlelemon.Profile.route) {
             Profile(navController)
         }
-        composable(Onboarding.route) {
+        composable(com.hanna.littlelemon.Onboarding.route) {
             Onboarding(navController)
         }
     }
@@ -32,9 +34,9 @@ private fun determineStartDestination(context: Context): String {
 
 
     if (sharedPreferences.getBoolean("userRegistered", false)) {
-        return Home.route
+        return com.hanna.littlelemon.Home.route
     }
     else{
-        return Onboarding.route
+        return com.hanna.littlelemon.Onboarding.route
     }
 }

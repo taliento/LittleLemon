@@ -1,4 +1,4 @@
-package com.hanna.littlelemon.ui.theme
+package com.taliento.littlelemon.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

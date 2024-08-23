@@ -1,12 +1,10 @@
-package com.hanna.littlelemon
+package com.taliento.littlelemon
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.room.Room
-import com.hanna.littlelemon.composables.*
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.engine.android.*
@@ -17,7 +15,6 @@ import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import com.hanna.littlelemon.AppDatabase
 
 class MenuViewModel(application: Application): AndroidViewModel(application) {
     private val database: AppDatabase
@@ -64,7 +61,7 @@ class MenuViewModel(application: Application): AndroidViewModel(application) {
     }
 
 
-    fun saveMenuToDatabase(database: AppDatabase,  menuItemsNetwork: List<MenuItemNetwork>) {
+    fun saveMenuToDatabase(database: AppDatabase, menuItemsNetwork: List<MenuItemNetwork>) {
         val menuItemsRoom = menuItemsNetwork.map { it.toMenuItemRoom() }
         database.menuItemDao().insertAll(*menuItemsRoom.toTypedArray())
     }

@@ -1,11 +1,6 @@
-package com.hanna.littlelemon.composables
+package com.taliento.littlelemon.composables
 
-import android.Manifest
-import android.app.Activity
 import android.content.Context
-import android.content.pm.PackageManager
-import androidx.activity.compose.rememberLauncherForActivityResult
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -14,7 +9,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
@@ -25,31 +19,16 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import com.hanna.littlelemon.ui.theme.PrimaryGreen
-import com.hanna.littlelemon.ui.theme.PrimaryYellow
+import com.taliento.littlelemon.ui.theme.PrimaryGreen
+import com.taliento.littlelemon.ui.theme.PrimaryYellow
 import androidx.lifecycle.viewmodel.compose.viewModel
-import androidx.room.Room
-import com.bumptech.glide.integration.compose.ExperimentalGlideComposeApi
-import com.bumptech.glide.integration.compose.GlideImage
-import com.hanna.littlelemon.*
 import com.hanna.littlelemon.R
-import io.ktor.client.*
-import io.ktor.client.call.*
-import io.ktor.client.engine.android.*
-import io.ktor.client.plugins.contentnegotiation.*
-import io.ktor.client.request.*
-import io.ktor.client.statement.*
-import io.ktor.http.*
-import io.ktor.serialization.kotlinx.json.*
-import com.hanna.littlelemon.MenuViewModel
+import com.taliento.littlelemon.MenuViewModel
 import androidx.compose.runtime.remember
 import androidx.compose.ui.layout.ContentScale
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
-import androidx.core.content.PermissionChecker
-import coil.compose.rememberImagePainter
 import androidx.compose.runtime.Composable
 import coil.compose.AsyncImage
+import com.taliento.littlelemon.MenuItemRoom
 
 @Composable
 fun Home(navController: NavController){

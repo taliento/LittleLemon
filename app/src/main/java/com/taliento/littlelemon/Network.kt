@@ -1,4 +1,4 @@
-package com.hanna.littlelemon
+package com.taliento.littlelemon
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

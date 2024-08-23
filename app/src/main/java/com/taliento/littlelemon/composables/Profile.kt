@@ -1,9 +1,8 @@
-package com.hanna.littlelemon.composables
+package com.taliento.littlelemon.composables
 
 import android.content.Context
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.*
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -19,18 +18,17 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.hanna.littlelemon.R
-import com.hanna.littlelemon.ui.theme.PrimaryGreen
-import com.hanna.littlelemon.ui.theme.PrimaryYellow
-import com.hanna.littlelemon.composables.Onboarding
+import com.taliento.littlelemon.ui.theme.PrimaryGreen
+import com.taliento.littlelemon.ui.theme.PrimaryYellow
 
 @Composable
 fun Profile(navController: NavHostController) {
     val context = LocalContext.current
     val sharedPreferences = context.getSharedPreferences("UserPrefs", Context.MODE_PRIVATE)
 
-    val firstName = sharedPreferences.getString("firstName", "") ?: "Elie"
-    val lastName = sharedPreferences.getString("lastName", "") ?: "Hanna"
-    val email = sharedPreferences.getString("email", "") ?: "elie@hanna.com"
+    val firstName = sharedPreferences.getString("firstName", "") ?: "Davide"
+    val lastName = sharedPreferences.getString("lastName", "") ?: "Taliento"
+    val email = sharedPreferences.getString("email", "") ?: "davide@taliento.com"
 
     LazyColumn(
         modifier = Modifier

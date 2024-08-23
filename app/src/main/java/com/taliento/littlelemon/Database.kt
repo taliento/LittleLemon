@@ -1,4 +1,4 @@
-package com.hanna.littlelemon
+package com.taliento.littlelemon
 
 import androidx.lifecycle.LiveData
 import androidx.room.*

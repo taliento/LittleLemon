@@ -1,4 +1,4 @@
-package com.hanna.littlelemon.composables
+package com.taliento.littlelemon.composables
 
 import android.content.Context
 import android.widget.Toast
@@ -21,8 +21,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.core.content.edit
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.hanna.littlelemon.ui.theme.PrimaryGreen
-import com.hanna.littlelemon.ui.theme.PrimaryYellow
+import com.taliento.littlelemon.ui.theme.PrimaryGreen
+import com.taliento.littlelemon.ui.theme.PrimaryYellow
 import com.hanna.littlelemon.R
 
 @Composable
